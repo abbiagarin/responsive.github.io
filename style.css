@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(/images/bg-intro-desktop.png);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.section {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  padding: 0;
+  align-items: left;
+}
+
+.left_side {
+  margin: auto;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 3rem;
+}
+
+.desc {
+  color: #fff;
+  line-height: 3.3rem;
+}
+
+.form_header {
+  background-color: hsl(247, 32%, 48%);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 1px rgb(0 0 0 / 40%);
+}
+
+span {
+  font-weight: bold;
+}
+
+form {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 1px rgb(0 0 0 / 40%);
+  background-color: #fff;
+  margin-bottom: 25px;
+}
+
+input {
+  outline: none;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.form-content {
+  position: relative;
+}
+
+.form-content p {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: right;
+  padding-bottom: 1rem;
+  visibility: hidden;
+  font-family: inherit;
+}
+
+.success input {
+  border: 1.5px solid green;
+}
+
+.error input {
+  border: 1.5px solid red;
+}
+
+i {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  visibility: hidden;
+}
+
+.success .fa-check-circle {
+  visibility: visible;
+  color: green;
+}
+
+.error .fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+}
+
+.error p {
+  visibility: visible;
+}
+
+button {
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  box-shadow: 0 5px 1px rgb(0 0 0 / 40%);
+  font-weight: bold;
+}
+
+strong {
+  color: red;
+}
+
+.terms {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #000;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1220px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+  }
+
+  .desc {
+    line-height: 3rem;
+  }
+
+  .form_header {
+    padding: 8px;
+    width: 90%;
+  }
+
+  form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  input {
+    padding: 15px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .terms {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 12px;
+  }
+
+  .form_header {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  form {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .form-content p {
+    font-size: 10px;
+  }
+
+  i {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    visibility: hidden;
+  }
+
+  button {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 972px) {
+  body {
+    font-size: 15px;
+  }
+
+  .section {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .left_side {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .desc {
+    line-height: 3rem;
+  }
+
+  .form_header {
+    padding: 15px;
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  input {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .terms {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  body {
+    font-size: 15px;
+  }
+
+  .left_side {
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .desc {
+    line-height: 2.5rem;
+  }
+
+  .form_header {
+    padding: 25px;
+  }
+
+  .terms {
+    font-size: 1.1rem;
+  }
+}
